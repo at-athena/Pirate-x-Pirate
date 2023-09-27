@@ -915,12 +915,19 @@ Services Style
 
 .services::before {
   content: url(../images/pirate.png);
-  top: px;
   left: 0;
   position: absolute;
   width: 844px;
   height: 714px;
   z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .services::before {
+    content: url(../images/pirate.png);
+    position: block;
+  }
 }
 
 .services::after {
